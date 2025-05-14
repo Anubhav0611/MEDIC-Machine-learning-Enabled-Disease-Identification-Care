@@ -1,0 +1,174 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Symptoms</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{%static 'img/favicon.ico' %}">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Select2 CSS & JS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+</head>
+<body style="margin:0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(to right, #00b2b2, #eafcfc); min-height:100vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+  <form method="POST" style="background: white; padding: 30px 40px; border-radius: 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); width: 100%; max-width: 600px;">
+    {% csrf_token %}
+    <label for="symptoms" style="font-weight: bold; font-size: 20px; color: #004d4d;">Select Symptoms:</label>
+    <br><br>
+    <select id="symptoms" name="symptoms[]" multiple="multiple" style="width:100%">
+        <option>Itching</option>
+        <option>Skin rash</option>
+        <option>Shivering</option>
+        <option>Chills</option>
+        <option>Joint pain</option>
+        <option>Stomach pain</option>
+        <option>Acidity</option>
+        <option>Ulcers on tongue</option>
+        <option>Muscle wasting</option>
+        <option>Vomiting</option>
+        <option>Burning micturition</option>
+        <option>Spotting urination</option>
+        <option>Fatigue</option>
+        <option>Weight gain</option>
+        <option>Anxiety</option>
+        <option>Cold hands and feets</option>
+        <option>Mood swings</option>
+        <option>Weight loss</option>
+        <option>Restlessness</option>
+        <option>Lethargy</option>
+        <option>Patches in throat</option>
+        <option>Irregular sugar level</option>
+        <option>Cough</option>
+        <option>High fever</option>
+        <option>Sunken eyes</option>
+        <option>Breathlessness</option>
+        <option>Sweating</option>
+        <option>Dehydration</option>
+        <option>Indigestion</option>
+        <option>Headache</option>
+        <option>Yellowish skin</option>
+        <option>Dark urine</option>
+        <option>Nausea</option>
+        <option>Loss of appetite</option>
+        <option>Pain behind the eyes</option>
+        <option>Back pain</option>
+        <option>Constipation</option>
+        <option>Abdominal pain</option>
+        <option>Diarrhea</option>
+        <option>Mild fever</option>
+        <option>Yellow urine</option>
+        <option>Yellowing of eyes</option>
+        <option>Acute liver failure</option>
+        <option>Fluid overload</option>
+        <option>Swelling of stomach</option>
+        <option>Swelled lymph nodes</option>
+        <option>Malaise</option>
+        <option>Blurred and distorted vision</option>
+        <option>Phlegm</option>
+        <option>Throat irritation</option>
+        <option>Redness of eyes</option>
+        <option>Sinus pressure</option>
+        <option>Runny nose</option>
+        <option>Congestion</option>
+        <option>Chest pain</option>
+        <option>Weakness in limbs</option>
+        <option>Fast heart rate</option>
+        <option>Pain during bowel movements</option>
+        <option>Pain in anal region</option>
+        <option>Bloody stool</option>
+        <option>Irritation in anus</option>
+        <option>Neck pain</option>
+        <option>Dizziness</option>
+        <option>Cramps</option>
+        <option>Bruising</option>
+        <option>Obesity</option>
+        <option>Swollen legs</option>
+        <option>Swollen blood vessels</option>
+        <option>Puffy face and eyes</option>
+        <option>Enlarged thyroid</option>
+        <option>Brittle nails</option>
+        <option>Swollen extremeties</option>
+        <option>Excessive hunger</option>
+        <option>Extra-marital contacts</option>
+        <option>Drying and tingling lips</option>
+        <option>Slurred speech</option>
+        <option>Knee pain</option>
+        <option>Hip joint pain</option>
+        <option>Muscle weakness</option>
+        <option>Stiff neck</option>
+        <option>Swelling joints</option>
+        <option>Movement stiffness</option>
+        <option>Spinning movements</option>
+        <option>Loss of balance</option>
+        <option>Unsteadiness</option>
+        <option>Weakness of one body side</option>
+        <option>Loss of smell</option>
+        <option>Bladder discomfort</option>
+        <option>Foul smell of urine</option>
+        <option>Continuous feel of urine</option>
+        <option>Passage of gases</option>
+        <option>Internal itching</option>
+        <option>Toxic look</option>
+        <option>Depression</option>
+        <option>Irritability</option>
+        <option>Muscle pain</option>
+        <option>Altered sensorium</option>
+        <option>Red spots over body</option>
+        <option>Belly pain</option>
+        <option>Abnormal menstruation</option>
+        <option>Dischromic patches</option>
+        <option>Watering from eyes</option>
+        <option>Increased appetite</option>
+        <option>Polyuria</option>
+        <option>Family history</option>
+        <option>Mucoid sputum</option>
+        <option>Rusty sputum</option>
+        <option>Lack of concentration</option>
+        <option>Visual disturbances</option>
+        <option>Receiving blood transfusion</option>
+        <option>Receiving unsterile injections</option>
+        <option>Coma</option>
+        <option>Stomach bleeding</option>
+        <option>Distention of abdomen</option>
+        <option>History of alcohol consumption</option>
+        <option>Blood in sputum</option>
+        <option>Prominent veins on calf</option>
+        <option>Palpitations</option>
+        <option>Painful walking</option>
+        <option>Pus-filled pimples</option>
+        <option>Blackheads</option>
+        <option>Scarring</option>
+        <option>Skin peeling</option>
+        <option>Silver-like dusting</option>
+        <option>Small dents in nails</option>
+        <option>Inflammatory nails</option>
+        <option>Blister</option>
+        <option>Red sore around nose</option>
+        <option>Yellow crust oozing</option>
+      </select>
+
+    <br><br>
+    <input type="submit" value="Predict" style="background-color: #00b2b2; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+  </form>
+    {% if prediction %}
+            <div class="alert alert-info mt-4" style="display: flex;" >
+                <strong>Result:</strong> {{ prediction }}
+            </div>
+        {% endif %}
+  <script>
+    $(document).ready(function() {
+      $('#symptoms').select2({
+        placeholder: "Search and select symptoms",
+        allowClear: true
+      });
+    });
+  </script>
+
+</body>
+</html>
