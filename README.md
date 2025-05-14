@@ -45,13 +45,16 @@ MEDIC is an intelligent web-based disease prediction system that uses machine le
     ```bash
    pip install -r requirements.txt
    ```
-
-4. **Run Django server**
+4. **Move into the project directory**
+    ```bash
+   cd myproject
+   ```
+5. **Run Django server**
    ```bash
    python manage.py runserver
    ```
 
-5. **Access in browser**
+6. **Access in browser**
    ```
    http://127.0.0.1:8000/
    ```
