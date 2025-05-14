@@ -31,8 +31,8 @@ MEDIC is an intelligent web-based disease prediction system that uses machine le
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/yourusername/MEDIC.git
-   cd MEDIC
+   git clone https://github.com/Anubhav0611/MEDIC-Machine-learning-Enabled-Disease-Identification-Care.git
+   cd MEDIC-Machine-learning-Enabled-Disease-Identification-Care
    ```
 
 2. **Set up virtual environment (optional but recommended)**
@@ -42,7 +42,7 @@ MEDIC is an intelligent web-based disease prediction system that uses machine le
    ```
 
 3. **Install dependencies**
-   ```bash
+    ```bash
    pip install -r requirements.txt
    ```
 
@@ -66,21 +66,7 @@ MEDIC is an intelligent web-based disease prediction system that uses machine le
 - Model: RandomForestClassifier (Scikit-learn)
 - Accuracy: ~90–95% on test data
 
----
 
-## 📁 Directory Structure
-
-```
-MEDIC/
-├── manage.py
-├── medic/                  # Django app
-│   ├── views.py            # Prediction logic
-│   ├── templates/          # HTML files
-├── random_forest_model.pkl
-├── Training.csv            # Dataset
-├── requirements.txt
-└── README.md
-```
 
 ---
 
@@ -94,11 +80,7 @@ MEDIC/
 
 ---
 
-## 📜 License
 
-This project is open-source and free to use under the [MIT License](LICENSE).
-
----
 
 ## 🙌 Acknowledgments
 
@@ -114,4 +96,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ---
 
-> 🔗 Made with ❤️ by [Your Name or GitHub Username]
+> 🔗 Made with ❤️ by [Anubhav Shrivastava]
